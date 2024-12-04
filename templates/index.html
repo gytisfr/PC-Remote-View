@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <style>
+            html {
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                background-image: url({{ url_for("static", filename="screenshot.png") }});
+            }
+        </style>
+        <script>
+            setTimeout(function(){
+                window.location.reload(1);
+            }, 1000);
+        </script>
+    </head>
+</html>
